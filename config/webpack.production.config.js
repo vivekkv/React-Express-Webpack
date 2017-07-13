@@ -8,17 +8,17 @@ var StatsPlugin = require('stats-webpack-plugin');
 
 module.exports = {
   entry: [
-    path.join(__dirname, 'app/main.js')
+    path.join(__dirname, '../app/main.js')
   ],
   output: {
-    path: path.join(__dirname, '/dist/'),
+    path: path.join(__dirname, '..//dist/'),
     filename: '[name]-[hash].min.js',
     publicPath: '/'
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new HtmlWebpackPlugin({
-      template: 'app/index.tpl.html',
+      template: '../app/index.tpl.html',
       inject: 'body',
       filename: 'index.html'
     }),
@@ -39,7 +39,7 @@ module.exports = {
   ],
    resolve: {
     extensions: ["", ".js", ".jsx"],
-    root: path.resolve('../../app')
+    root: path.resolve('../app')
   },
   module: {
     loaders: [{

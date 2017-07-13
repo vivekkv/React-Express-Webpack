@@ -13,7 +13,7 @@
             "name": "Debug node",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/server.js",
+            "program": "${workspaceRoot}/server/index.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
